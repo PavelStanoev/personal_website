@@ -1,0 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@200;400;700&family=Special+Elite&display=swap");
+
+:root {
+  margin-top: 0px !important;
+  padding: 0 !important;
+  background: linear-gradient(to left, #0f2027, #203a43, #2c5364);
+  font-family: "Poppins";
+}

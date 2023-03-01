@@ -1,0 +1,126 @@
+.card {
+  background: #f5c8ce;
+  padding-top: 0.2em;
+  padding-bottom: 2.5em;
+  border-radius: 1em;
+  padding-left: 2.2em;
+  padding-right: 2.2em;
+  border: 1px solid transparent;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1),
+    0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1),
+    0 16px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card_title {
+  text-align: center;
+  font-size: 1.7rem;
+
+  font-family: "Special Elite";
+  position: relative;
+
+  color: #2c5364;
+  margin-bottom: 10%;
+}
+
+.card_title:before {
+  position: absolute;
+  content: "";
+  width: 10%;
+  height: 2px;
+  background: #2c5364;
+  bottom: -10px;
+}
+
+.single_element {
+  display: grid;
+  grid-template-columns: 25% 1fr;
+}
+
+.icon {
+  fill: #2c5364;
+  margin-top: 0.25em;
+}
+
+.type {
+  color: #2c5364;
+  font-size: 1rem;
+}
+
+/*  Hover animations */
+
+.card:hover {
+  background-color: transparent;
+  border-color: #f5c8ce;
+  cursor: default;
+  color: #f5c8ce;
+}
+
+.card:hover .card_title {
+  color: #f5c8ce;
+}
+
+.card:hover .type {
+  color: #f5c8ce;
+}
+
+.card:hover .icon {
+  fill: #f5c8ce;
+}
+
+.card:hover .card_title:before {
+  background: #f5c8ce;
+}
+
+/*  Media Queries */
+
+@media (max-width: 1900px) {
+  .single_element {
+    display: grid;
+    grid-template-columns: 20% 1fr;
+  }
+  .card_title {
+    font-size: 1.55rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  .card_title {
+    margin-bottom: 5%;
+  }
+  .type {
+    font-size: 1.15rem;
+  }
+  .icon {
+    margin-top: 0.37em;
+  }
+  
+}
+
+@media (max-width: 992px) {
+  .type {
+    font-size: 0.9rem;
+  }
+  .icon {
+    margin-top: 0.18em;
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .card_title {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .type {
+    font-size: 0.75rem;
+  }
+  .card_title {
+    margin-bottom: 17%;
+  }
+  .icon {
+    margin-top: 0em;
+  }
+}

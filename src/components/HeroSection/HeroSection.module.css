@@ -1,0 +1,315 @@
+.wrapper {
+  max-width: 69%;
+  margin: 0 auto;
+}
+.section {
+  display: flex;
+  gap: 7em;
+  margin-top: 15em;
+}
+.newline {
+  display: none;
+}
+
+.left_col {
+  width: 45%;
+}
+
+.right_col {
+  flex-grow: 1;
+}
+
+.left_col h2 {
+  font-size: 2.4rem;
+  margin: 0;
+  color: white;
+  font-weight: 400;
+  line-height: 200%;
+}
+
+.left_col h1 {
+  font-size: 2.4rem;
+
+  color: white;
+  margin: 0.5em 0 0 0;
+  font-weight: 400;
+
+  white-space: nowrap;
+}
+
+.subhead {
+  font-size: 1.15rem;
+  margin-top: 1.7em;
+  color: white;
+}
+.highlight {
+  font-family: "Special Elite";
+  border-radius: 0.3em;
+  padding: 0.15em 0.2em 0em 0.2em;
+  background: linear-gradient(to left, #ee9ca7, #ffdde1);
+  font-size: 3rem;
+
+  color: #2c5364;
+}
+
+.cta_button,
+.secondory_cta {
+  display: flex;
+  gap: 2em;
+}
+
+.cta_button {
+  margin-top: 6em;
+  align-items: center;
+}
+
+.primary_cta {
+  font-family: "Special Elite";
+  text-decoration: none;
+  background: linear-gradient(to left, #ee9ca7, #ffdde1);
+  color: #2c5364;
+  border-radius: 0.6em;
+  align-items: center;
+  font-size: 1.4rem;
+  padding: 0.7em 0.8em 0.5em 0.8em;
+  /* font-weight: 600; */
+}
+
+.secondory_cta {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 1em 0;
+}
+
+.secondory_cta svg {
+  margin-left: 0.5em;
+  width: 20px;
+  transition: transform 0.3s;
+}
+
+/* Right column */
+
+.right_col {
+  display: grid;
+  gap: 1.55em;
+  grid-template-columns: auto auto;
+  grid-template-areas:
+    "left ."
+    "left .";
+}
+
+.card1 {
+  grid-area: left;
+  border-radius: 0.8em;
+  background-image: url("../../assets/HeroSection/working.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top right;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.8s;
+}
+
+.card2 {
+  border-radius: 0.8em;
+  background-image: url("../../assets/HeroSection/robot.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.8s;
+}
+.card3 {
+  border-radius: 0.8em;
+  background-image: url("../../assets/HeroSection/training.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.8s;
+}
+.card1::before,
+.card2::before,
+.card3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: inherit;
+  transition: inherit;
+}
+
+.card1:hover::before,
+.card3:hover::before {
+  transform: scale(1.2);
+}
+
+.card2:hover::before {
+  transform: scale(1.05);
+}
+
+.cardhelper {
+  position: relative;
+}
+
+/* Animations */
+
+.secondory_cta:hover svg {
+  transform: translateX(10px);
+}
+.secondory_cta:hover {
+  text-decoration: underline;
+}
+
+.card1:hover {
+  background-size: 140%;
+}
+.card2:hover {
+  background-size: 140%;
+}
+/* .card3:hover {
+  background-size: 140%;
+} */
+
+.section {
+  animation: growIn 5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+  transform: scale(0.4);
+}
+
+@keyframes growIn {
+  to {
+    transform: scale(1);
+  }
+}
+@media (max-width: 1900px) {
+  .wrapper {
+    max-width: 80%;
+  }
+  .section {
+    margin-top: 13em;
+  }
+  .left_col h2 {
+    font-size: 2rem;
+  }
+  .left_col h1 {
+    font-size: 2rem;
+    margin: 0.25em 0 0 0;
+  }
+  .subhead {
+    font-size: 1rem;
+  }
+  .highlight {
+    font-size: 2.4rem;
+  }
+  .cta_button {
+    margin-top: 4em;
+  }
+  .right_col {
+    gap: 1.2em;
+  }
+}
+
+@media (max-width: 1400px) {
+  .wrapper {
+    max-width: 85%;
+  }
+  .section {
+    margin-top: 10em;
+  }
+  .primary_cta {
+    padding: 0.6em 0.6em 0.4em 0.6em;
+  }
+}
+@media (max-width: 1200px) {
+  .section {
+    margin: auto;
+    width: 80%;
+    margin-top: 5em;
+    text-align: center;
+  }
+  .left_col {
+    width: 100%;
+  }
+  .right_col {
+    display: none;
+  }
+  .cta_button {
+    margin-top: 4em;
+    justify-content: space-between;
+  }
+  .subhead {
+    font-size: 1.1rem;
+  }
+  .left_col h2 {
+    font-size: 1.8rem;
+  }
+  .left_col h1 {
+    font-size: 1.8rem;
+  }
+
+  .highlight {
+    font-size: 2.2rem;
+
+    color: #2c5364;
+  }
+}
+
+@media (max-width: 992px) {
+  .wrapper {
+    max-width: 100%;
+  }
+  .section {
+    margin-top: 3em;
+  }
+
+  .cta_button {
+    margin-top: 4em;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    width:
+     80%;
+  }
+
+}
+
+@media (max-width: 576px) {
+  .section {
+    width: 100%;
+  }
+  .cta_button {
+    margin-top: 3.25em;
+  }
+  .primary_cta {
+    margin-left: 4%;
+    font-size: 1rem;
+  }
+  .secondory_cta {
+    font-size: 0.9rem;
+    margin-right: 4%;
+  }
+  .left_col h2 {
+    font-size: 1.45rem;
+    line-height: 150%;
+  }
+  .left_col h1 {
+    font-size: 1.45rem;
+    margin: 0 0 0 0;
+  }
+  .highlight {
+    font-size: 1.7rem;
+  }
+  .subhead {
+    font-size: 0.9rem;
+  }
+  .newline {
+    display: block;
+  }
+}
