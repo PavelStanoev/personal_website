@@ -185,12 +185,19 @@
     transform: scale(1);
   }
 }
+
+@media (max-width: 2000px) {
+  .section {
+    margin-top: 12em;
+  }
+}
+
 @media (max-width: 1900px) {
   .wrapper {
     max-width: 80%;
   }
   .section {
-    margin-top: 13em;
+    margin-top: 10em;
   }
   .left_col h2 {
     font-size: 2rem;
@@ -224,6 +231,12 @@
     padding: 0.6em 0.6em 0.4em 0.6em;
   }
 }
+
+@media (max-width: 1300px) {
+  .section {
+    margin-top: 8em;
+  }}
+
 @media (max-width: 1200px) {
   .section {
     margin: auto;
@@ -274,10 +287,8 @@
 
 @media (max-width: 768px) {
   .section {
-    width:
-     80%;
+    width: 80%;
   }
-
 }
 
 @media (max-width: 576px) {
