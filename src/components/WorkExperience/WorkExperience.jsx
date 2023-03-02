@@ -8,6 +8,7 @@ import "react-vertical-timeline-component/style.min.css";
 import { Text, createStyles } from "@mantine/core";
 import { BsBriefcase } from "react-icons/bs";
 import { RxBackpack } from "react-icons/rx";
+import { useMediaQuery } from "@mantine/hooks";
 
 const useStyles = createStyles((theme) => ({
   wrapper: {
@@ -23,7 +24,6 @@ const useStyles = createStyles((theme) => ({
     [theme.fn.smallerThan("lg")]: {
       maxWidth: "80%",
       paddingTop: "5em",
-
     },
     [theme.fn.smallerThan("md")]: {
       maxWidth: "85%",
@@ -125,6 +125,7 @@ const useStyles = createStyles((theme) => ({
 
 const WorkExperience = () => {
   const { classes, cx } = useStyles();
+  const small_mid = useMediaQuery("(min-width: 1000px)");
 
   return (
     <>
@@ -133,7 +134,7 @@ const WorkExperience = () => {
           Work <span className={classes.highlight}>Experience</span>
         </h1>
 
-        <VerticalTimeline lineColor={"#f5c8ce"}>
+        <VerticalTimeline lineColor={"#f5c8ce"} animate={small_mid ? true : false}>
           <VerticalTimelineElement
             contentStyle={{
               background: "#f5c8ce",
