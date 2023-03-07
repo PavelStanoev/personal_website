@@ -99,17 +99,17 @@ const About = () => {
           <CardComp
             title="Full stack development"
             icon={AiOutlineCode}
-            description="Specialising in automation, I have vast knowledge of back-end architecture and it's core functionalities. Recently, I have picked up Front-end development where I am spending most of my time, improving both my technological stack and design skill."
+            description="Specialising in automation, I have vast knowledge of back-end architecture and its core functionalities. Lately, I have spent my time developing front-end applications and websites, enhanciong both my tech stack and design competence."
           ></CardComp>
           <CardComp
             title="Machine Learning"
             icon={AiOutlineRobot}
-            description="I have build predictive models using TensorFlow, PyTorch and Apache Spark and statistical functions to test their preformace."
+            description="Building predictive models using TensorFlow, PyTorch and Apache Spark as well as developing statistical functions to test model performance in the banking sector."
           ></CardComp>
           <CardComp
             title="Credit Risk Validation"
             icon={AiOutlineBank}
-            description="Validating Internal Rating-Based models in line with the European Central Bank's regulations. I have good knowledge of EBA guidelines and specific ECB tests which I have automated."
+            description="Validation of internally rated models in accordance with European Central Bank regulations. I have a good understanding of the EBA guidelines and the ECB specific tests that I have previously automated."
           ></CardComp>
         </SimpleGrid>
       </section>

@@ -134,7 +134,10 @@ const WorkExperience = () => {
           Work <span className={classes.highlight}>Experience</span>
         </h1>
 
-        <VerticalTimeline lineColor={"#f5c8ce"} animate={small_mid ? true : false}>
+        <VerticalTimeline
+          lineColor={"#f5c8ce"}
+          animate={small_mid ? true : false}
+        >
           <VerticalTimelineElement
             contentStyle={{
               background: "#f5c8ce",
@@ -149,17 +152,17 @@ const WorkExperience = () => {
             }}
             icon={<BsBriefcase />}
           >
-            <Text className={classes.highlight_job}>Back-end develper</Text>
+            <Text className={classes.highlight_job}>Back-end developer</Text>
             <Text className={classes.firm}>IBM</Text>
             <Text className={classes.rest}>Sofia, Bularia</Text>
             <Text className={classes.rest}>03/2022 - Present</Text>
             <Text className={classes.rest}>
               - Backend work for the IBM's Support Insights<br></br>- Building
-              RESTful APIs and complex queries with PostgreSQL<br></br>- Working
-              with the data squad to manage and further develop multiple
+              RESTful APIs and queries with PostgreSQL<br></br>- Working with
+              the data squad to further manage and further develop multiple
               databases in support of different cloud environments <br></br>-
               Working closely with product owners and frontend developers to
-              ensure successful completion of design specs.
+              ensure successful completion of design specs
             </Text>
           </VerticalTimelineElement>
 
@@ -181,8 +184,8 @@ const WorkExperience = () => {
             <Text className={classes.rest}>Sofia, Bularia</Text>
             <Text className={classes.rest}>02/2022 - 03/2022</Text>
             <Text className={classes.rest}>
-              - Creating custom code blocks for flows designed for specific
-              needs of clients or further improvments of the Hyperscience
+              - Creation of customized code blocks for flows designed for
+              specific customer needs or enhancement of the Hyperscience
               platform
               <br></br>- Extensive knowledge of HS's ML and DL models
             </Text>
@@ -206,10 +209,11 @@ const WorkExperience = () => {
             <Text className={classes.rest}>Sofia, Bularia</Text>
             <Text className={classes.rest}>06/2020 - 02/2022</Text>
             <Text className={classes.rest}>
-              - Big role in the decision making and the building of software in
-              credit risk<br></br>- Designing and building new functionalities
-              for automating the validation of IRB models <br></br>- Data
-              preparation and SQL integration
+              - Key role in decision-making and software development in credit
+              risk.
+              <br></br>- Design and development of new features to automate the
+              validation of IRB models. <br></br>- Data preparation and SQL
+              integration
             </Text>
           </VerticalTimelineElement>
 

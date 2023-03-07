@@ -39,9 +39,7 @@ const useStyles = createStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
     paddingTop: "2vh",
-    [theme.fn.smallerThan("xl")]: {
-      paddingTop: "1.3vh",
-    },
+
     [theme.fn.smallerThan("sm")]: {
       display: "none",
     },
@@ -195,8 +193,8 @@ const useStyles = createStyles((theme) => ({
     },
   },
   burger: {
-    paddingTop: "3vh",
-    paddingLeft: "1vh",
+    paddingTop: "5vh",
+    paddingLeft: "2.5vh",
     [theme.fn.largerThan("sm")]: {
       display: "none",
     },
